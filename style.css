@@ -1,0 +1,97 @@
+/* Общие стили */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a1128;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    header {
+      background: #1f4068;
+      padding: 20px 10px;
+      text-align: center;
+      color: #f3f3f3;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 5px;
+      font-style: italic;
+    }
+    section {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    h2 {
+      color: #74c0fc;
+      border-bottom: 2px solid #74c0fc;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1rem;
+    }
+    /* Персонажи */
+    .characters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .character {
+      background: #142850;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #1f4068;
+      width: 45%;
+      padding: 10px;
+      text-align: center;
+    }
+    .character img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .character h3 {
+      margin: 10px 0 5px;
+      color: #ff6f91;
+    }
+    .character p {
+      font-size: 0.9rem;
+      color: #b0b0b0;
+    }
+    /* Галерея */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #74c0fc;
+    }
+    /* Футер */
+    footer {
+      background: #1f4068;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-top: 40px;
+    }
+    /* Адаптивность */
+    @media (max-width: 400px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .character {
+        width: 100%;
+      }
+    }
